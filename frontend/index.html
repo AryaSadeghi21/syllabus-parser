@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syllabus Parser</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">📚</div>
+      <h1 class="subtitle">Syllabus Parser</h1>
+
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">📄</div>
+        <div class="upload-text">Upload your syllabus PDF</div>
+        <div class="upload-hint">Drag & drop or click to browse</div>
+        <input type="file" class="file-input" id="fileInput" accept=".pdf" />
+      </div>
+
+      <div class="semester-date-section" id="semesterDateSection">
+        <div class="date-input-group">
+          <label for="semesterStartDate">📅 When does your term start?</label>
+          <input type="date" id="semesterStartDate" class="date-input" />
+          <div class="date-hint">Pick the first day of your term</div>
+        </div>
+      </div>
+
+      <div class="selected-file" id="selectedFile">
+        <div class="file-name" id="fileName"></div>
+        <div class="file-size" id="fileSize"></div>
+      </div>
+
+      <button class="process-btn" id="processBtn">Process Syllabus</button>
+
+      <div class="status" id="status">
+        <div id="statusText"></div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="export-options" id="exportOptions">
+        <div class="export-title">Export to:</div>
+        <div class="export-buttons">
+          <button class="export-btn n8n" id="n8nBtn">🔄 Export to n8n</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
